@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/InsomniaCoder/go-redis-load/redis"
 	"os"
 
 	"github.com/InsomniaCoder/go-redis-load/server"
@@ -18,4 +19,5 @@ func main() {
 	flag.Parse()
 	config.Init(*environment)
 	server.Init()
+	redis.Init()
 }
