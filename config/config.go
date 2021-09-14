@@ -6,8 +6,8 @@ import (
 )
 
 type AppConfig struct {
-	Server   ServerConfig
-	Redis RedisConfig
+	Server ServerConfig
+	Redis  RedisConfig
 }
 
 type RedisConfig struct {

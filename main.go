@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/InsomniaCoder/go-redis-load/server"
 	"github.com/InsomniaCoder/go-redis-load/config"
-
 )
 
 func main() {
@@ -17,4 +17,5 @@ func main() {
 	}
 	flag.Parse()
 	config.Init(*environment)
+	server.Init()
 }
