@@ -11,7 +11,7 @@ type AppConfig struct {
 }
 
 type RedisConfig struct {
-	Server string
+	Host string
 	Port   int
 }
 
